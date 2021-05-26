@@ -8,11 +8,14 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
+import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    MatSliderModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
