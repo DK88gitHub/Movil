@@ -2,29 +2,166 @@
 
 <ion-content [fullscreen]="true">
   
-  <ion-list>
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
 
-    <ion-list-header>
-      Productos
-    </ion-list-header>
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title">
+          Gafas
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+     
+      <ion-list>
+        <ion-list-header class="title">
+         Categorias
+        </ion-list-header>
 
-    <ion-item>
-      <ion-label>Gafas</ion-label>
-    </ion-item>
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/mujer.png"></ion-img>
+          <ion-label>Mujer</ion-label>
+        </ion-item>
 
-    <ion-item>
-      <ion-label>Lentes Oftálmicos</ion-label>
-    </ion-item>
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/hombre.png"></ion-img>
+          <ion-label>Hombre</ion-label>
+        </ion-item>
+      </ion-list>
 
-    <ion-item>
-      <ion-label>Lentes de Contacto</ion-label>
-    </ion-item>
+      <ion-list>
+        <ion-list-header class="title">
+         Marcas
+        </ion-list-header>
 
-    <ion-item>
-      <ion-label>Promociones</ion-label>
-    </ion-item>
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/002rayban_b_1.png"></ion-img>
+          <ion-label>Ray-Ban</ion-label>
+        </ion-item>
 
-    <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/002oakley_b_2.png"></ion-img>
+          <ion-label>Oakley</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header class="title">
+         Forma
+        </ion-list-header>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/irregular.png"></ion-img>
+          <ion-label>Irregular</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/butterfly.png"></ion-img>
+          <ion-label>Mariposa</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/pilot.png"></ion-img>
+          <ion-label>Piloto</ion-label>
+        </ion-item>
+      </ion-list>
+      
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title">
+          Lentes Oftálmicos
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+     
+      <ion-list>
+        <ion-list-header class="title">
+         Categorias
+        </ion-list-header>
+
+        <ion-item button onclick="showDetail('${tech.title}')">
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/mujer.png"></ion-img>
+          <ion-label>Mujer</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/hombre.png"></ion-img>
+          <ion-label>Hombre</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header class="title">
+         Marcas
+        </ion-list-header>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/002rayban_b_1.png"></ion-img>
+          <ion-label>Ray-Ban</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/002oakley_b_2.png"></ion-img>
+          <ion-label>Oakley</ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-list-header class="title">
+         Forma
+        </ion-list-header>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/irregular.png"></ion-img>
+          <ion-label>Irregular</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/butterfly.png"></ion-img>
+          <ion-label>Mariposa</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-img slot="end" src="https://gmo.com.ec/pub/media/wysiwyg/pilot.png"></ion-img>
+          <ion-label>Piloto</ion-label>
+        </ion-item>
+      </ion-list>
+      
+    </mat-expansion-panel>
+
+  </mat-accordion>
+
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title">
+          Promociones
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+     
+      <ion-list>
+       
+        <ion-item>
+          <ion-label>Promociones Vigentes</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Promociones Caducadas</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Productos con Descuento</ion-label>
+        </ion-item>
+      </ion-list>
+
+    </mat-expansion-panel>
+
+  </mat-accordion>
     
-  </ion-list>
+    
+  
 </ion-content>

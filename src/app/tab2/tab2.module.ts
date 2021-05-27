@@ -9,6 +9,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 
 import { MatSliderModule } from '@angular/material/slider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -16,6 +19,9 @@ import { MatSliderModule } from '@angular/material/slider';
     CommonModule,
     FormsModule,
     MatSliderModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatIconModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
